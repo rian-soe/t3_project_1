@@ -12,8 +12,8 @@ export default function Hero() {
             Web Developer & QA Engineer
           </h2>
           <p className="text-lg md:text-xl max-w-2xl mx-auto md:mx-0 mb-8 text-gray-700">
-            Brief introduction about yourself and what you do. Highlight your expertise and what makes you unique.
-          </p>
+             With a dual focus on web development and quality assurance, I oversee the entire lifecycle of web projects, from concept to deployment. My goal is to create impactful and resilient digital products, ensuring they not only function beautifully but also stand up to rigorous testing.
+        </p>
           <div className="flex flex-wrap gap-4 justify-center md:justify-start">
             <Link
               href="#contact"

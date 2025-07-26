@@ -25,10 +25,14 @@ const Navbar = () => {
     <header className={`fixed w-full z-50 transition-all ${isScrolled ? 'bg-white/90 backdrop-blur-sm shadow-sm' : 'bg-white/80'}`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-xl font-bold text-gray-800 hover:text-blue-600 transition-colors">
-            Rian Soe
+        <Link href="/" className="text-xl font-bold text-gray-800 hover:text-blue-600 transition-colors">
+            {/* Replace the text "Rian Soe" with your image logo */}
+            <img 
+              src="/images/RianSoe.png" // Replace with the actual URL of your logo image
+              alt="Rian Soe Logo"
+              className="h-10 md:h-10" // Adjust height as needed with Tailwind CSS classes
+            />
           </Link>
-          
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
               <Link

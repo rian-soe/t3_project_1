@@ -2,7 +2,8 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-gray-100 text-gray-900 p-6">
       <div className="max-w-3xl mx-auto bg-white shadow-xl rounded-2xl p-8">
-        <h1 className="text-4xl font-bold text-blue-600 mb-4">Hi, I'm Rian Soe 👋</h1>
+      <h1 className="text-4xl font-bold text-blue-600 mb-4">Hi, I&apos;m Rian Soe 👋</h1>
+
         <p className="text-lg mb-6">
           I'm a web developer currently learning React, Next.js, and the T3 Stack. I love building fast,
           modern web applications and exploring new technologies.

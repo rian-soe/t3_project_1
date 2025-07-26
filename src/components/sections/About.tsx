@@ -21,7 +21,7 @@ export default function About() {
             
             <div className="md:w-2/3 space-y-6">
               <p className="text-lg text-gray-700">
-                I'm a passionate developer with 5+ years of experience building web applications.
+                I&apos;m a passionate developer with 5+ years of experience building web applications.
                 Specializing in modern JavaScript frameworks and cloud technologies, I create
                 performant, scalable solutions with great user experiences.
               </p>

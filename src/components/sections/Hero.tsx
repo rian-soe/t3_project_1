@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="container mx-auto px-6">
         <div className="text-center md:text-left">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Hi, I'm <span className="text-blue-600">Rian Soe</span>
+            Hi, I&apos;m <span className="text-blue-600">Rian Soe</span>
           </h1>
           <h2 className="text-2xl md:text-3xl text-gray-600 mb-8">
             Web Developer & QA Engineer

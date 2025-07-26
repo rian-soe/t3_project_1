@@ -26,7 +26,7 @@ const Navbar = () => {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="text-xl font-bold text-gray-800 hover:text-blue-600 transition-colors">
-            YourName
+            Rian Soe
           </Link>
           
           <div className="hidden md:flex space-x-8">

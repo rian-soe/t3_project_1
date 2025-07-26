@@ -5,7 +5,7 @@ export default function HomePage() {
       <h1 className="text-4xl font-bold text-blue-600 mb-4">Hi, I&apos;m Rian Soe 👋</h1>
 
         <p className="text-lg mb-6">
-          I'm a web developer currently learning React, Next.js, and the T3 Stack. I love building fast,
+          I&apos;m a web developer currently learning React, Next.js, and the T3 Stack. I love building fast,
           modern web applications and exploring new technologies.
         </p>
 

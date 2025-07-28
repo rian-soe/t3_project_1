@@ -106,7 +106,7 @@ export default function Contact() {
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-semibold text-gray-900 mb-6">Let's Connect</h3>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-6">Let&apos;s Connect</h3>
                 <p className="text-gray-600 mb-8">
                   I&apos;m always interested in new opportunities and collaborations. 
                   Whether you have a question or just want to say hi, feel free to reach out!

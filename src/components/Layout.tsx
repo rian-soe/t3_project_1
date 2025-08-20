@@ -17,7 +17,7 @@ export default function Layout({ children, title = '' }: LayoutProps) {
       </Head>
       <Navbar />
       <main>{children}</main>
-      <footer className="bg-gray-50 py-8 text-center">
+      <footer className="bg-gray-50 dark:bg-gray-800 py-8 text-center text-gray-700 dark:text-gray-300">
         © {new Date().getFullYear()} Rian Soe. All rights reserved.
       </footer>
     </>

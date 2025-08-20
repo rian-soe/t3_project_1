@@ -91,11 +91,18 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-500">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-green-500 to-blue-600 rounded-full mb-6 shadow-lg">
+            <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h2 className="text-5xl font-bold bg-gradient-to-r from-gray-900 via-green-800 to-blue-800 dark:from-white dark:via-green-200 dark:to-blue-200 bg-clip-text text-transparent mb-6">
+            Get In Touch
+          </h2>
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Have a question or want to work together? I&apos;d love to hear from you. 
             Send me a message and I&apos;ll respond as soon as possible.
           </p>
@@ -106,8 +113,8 @@ export default function Contact() {
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-semibold text-gray-900 mb-6">Let&apos;s Connect</h3>
-                <p className="text-gray-600 mb-8">
+                <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">Let&apos;s Connect</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-8">
                   I&apos;m always interested in new opportunities and collaborations. 
                   Whether you have a question or just want to say hi, feel free to reach out!
                 </p>
@@ -121,8 +128,8 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-medium text-gray-900">Email</h4>
-                    <p className="text-gray-600">riansoe65@gmail.com</p>
+                    <h4 className="font-medium text-gray-900 dark:text-white">Email</h4>
+                    <p className="text-gray-600 dark:text-gray-300">riansoe65@gmail.com</p>
                   </div>
                 </div>
 
@@ -134,8 +141,8 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-medium text-gray-900">Location</h4>
-                    <p className="text-gray-600">Yangon, Myanmar</p>
+                    <h4 className="font-medium text-gray-900 dark:text-white">Location</h4>
+                    <p className="text-gray-600 dark:text-gray-300">Yangon, Myanmar</p>
                   </div>
                 </div>
 
@@ -146,19 +153,19 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-medium text-gray-900">Phone</h4>
-                    <p className="text-gray-600">+95 9 422 914 945</p>
+                    <h4 className="font-medium text-gray-900 dark:text-white">Phone</h4>
+                    <p className="text-gray-600 dark:text-gray-300">+95 9 422 914 945</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Contact Form */}
-            <div className="bg-white rounded-2xl shadow-lg p-8">
+            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 border border-gray-100 dark:border-gray-700">
               {isClient ? (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                       Name *
                     </label>
                     <input
@@ -167,18 +174,18 @@ export default function Contact() {
                       name="name"
                       value={formData.name}
                       onChange={handleInputChange}
-                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors ${
-                        errors.name ? 'border-red-500' : 'border-gray-300'
+                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 ${
+                        errors.name ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
                       }`}
                       placeholder="Your name"
                     />
                     {errors.name && (
-                      <p className="mt-1 text-sm text-red-600">{errors.name}</p>
+                      <p className="mt-1 text-sm text-red-600 dark:text-red-400">{errors.name}</p>
                     )}
                   </div>
 
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                       Email *
                     </label>
                     <input
@@ -187,18 +194,18 @@ export default function Contact() {
                       name="email"
                       value={formData.email}
                       onChange={handleInputChange}
-                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors ${
-                        errors.email ? 'border-red-500' : 'border-gray-300'
+                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 ${
+                        errors.email ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
                       }`}
                       placeholder="your.email@example.com"
                     />
                     {errors.email && (
-                      <p className="mt-1 text-sm text-red-600">{errors.email}</p>
+                      <p className="mt-1 text-sm text-red-600 dark:text-red-400">{errors.email}</p>
                     )}
                   </div>
 
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                       Subject *
                     </label>
                     <input
@@ -207,18 +214,18 @@ export default function Contact() {
                       name="subject"
                       value={formData.subject}
                       onChange={handleInputChange}
-                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors ${
-                        errors.subject ? 'border-red-500' : 'border-gray-300'
+                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 ${
+                        errors.subject ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
                       }`}
                       placeholder="What's this about?"
                     />
                     {errors.subject && (
-                      <p className="mt-1 text-sm text-red-600">{errors.subject}</p>
+                      <p className="mt-1 text-sm text-red-600 dark:text-red-400">{errors.subject}</p>
                     )}
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                       Message *
                     </label>
                     <textarea
@@ -227,13 +234,13 @@ export default function Contact() {
                       value={formData.message}
                       onChange={handleInputChange}
                       rows={5}
-                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-none ${
-                        errors.message ? 'border-red-500' : 'border-gray-300'
+                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-none bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 ${
+                        errors.message ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
                       }`}
                       placeholder="Tell me more about your project or question..."
                     />
                     {errors.message && (
-                      <p className="mt-1 text-sm text-red-600">{errors.message}</p>
+                      <p className="mt-1 text-sm text-red-600 dark:text-red-400">{errors.message}</p>
                     )}
                   </div>
 
@@ -257,26 +264,26 @@ export default function Contact() {
                   </button>
 
                   {submitStatus === 'success' && (
-                    <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
+                    <div className="p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg">
                       <div className="flex items-center space-x-2">
-                        <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
-                        <p className="text-green-800 font-medium">Message sent successfully!</p>
+                        <p className="text-green-800 dark:text-green-200 font-medium">Message sent successfully!</p>
                       </div>
-                      <p className="text-green-700 text-sm mt-1">I&apos;ll get back to you as soon as possible.</p>
+                      <p className="text-green-700 dark:text-green-300 text-sm mt-1">I&apos;ll get back to you as soon as possible.</p>
                     </div>
                   )}
 
                   {submitStatus === 'error' && (
-                    <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
+                    <div className="p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-700 rounded-lg">
                       <div className="flex items-center space-x-2">
-                        <svg className="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-5 h-5 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                         </svg>
-                        <p className="text-red-800 font-medium">Something went wrong</p>
+                        <p className="text-red-800 dark:text-red-200 font-medium">Something went wrong</p>
                       </div>
-                      <p className="text-red-700 text-sm mt-1">Please try again or contact me directly via email.</p>
+                      <p className="text-red-700 dark:text-red-300 text-sm mt-1">Please try again or contact me directly via email.</p>
                     </div>
                   )}
                 </form>

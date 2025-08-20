@@ -11,7 +11,7 @@ export default function Hero() {
             {/* Animated greeting */}
             <div className="mb-6">
               <span className="text-lg md:text-xl text-blue-600 dark:text-blue-400 font-medium animate-fade-in">
-                👋 Hello, I'm
+                👋 Hello, I&apos;m
               </span>
             </div>
 

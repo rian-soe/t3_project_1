@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import ThemeToggle from './ThemeToggle';
+import Image from 'next/image';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,10 +29,12 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
         <Link href="/" className="text-xl font-bold text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
             {/* Replace the text "Rian Soe" with your image logo */}
-            <img 
-              src="/images/RianSoe.png"
+            <Image
+              src="/images/RianSoe.png" // Make sure this file exists in public/images/
               alt="Rian Soe Logo"
-              className="w-10 h-10 rounded-full object-cover shadow-md"
+              width={40} // required
+              height={40} // required
+              className="rounded-full object-cover shadow-md"
             />
 
           </Link>

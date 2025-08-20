@@ -102,7 +102,7 @@ export default function Projects() {
             My Projects
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Here are some of the projects I've worked on. Each project represents a unique challenge 
+            Here are some of the projects I&apos;ve worked on. Each project represents a unique challenge 
             and showcases different technologies and problem-solving approaches.
           </p>
         </div>
@@ -264,7 +264,7 @@ export default function Projects() {
               href="#contact"
               className="inline-flex items-center px-10 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-2xl hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              <span className="mr-3">Let's Discuss Your Project</span>
+              <span className="mr-3">Let&apos;s Discuss Your Project</span>
               <svg className="w-6 h-6 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
